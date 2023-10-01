@@ -1,1 +1,191 @@
-/* место для вашего кода */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  color: #000;
+  font-family: Raleway;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.header {
+  margin: 92px 49px 92px 51px;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+}
+.menu {
+  width: 388px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  list-style: circle;
+}
+
+.menu li {
+  /*margin-right: 30px;*/
+  color: #000;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.logo {
+  width: 148.112px;
+  height: 104.652px;
+  flex-shrink: 0;
+}
+.menu li:first-child {
+  margin-left: 0; /* Убираем отступ перед первым пунктом */
+  list-style: none;
+}
+address {
+  display: block;
+  font-style: normal;
+  width: 240px;
+  height: 109px;
+  flex-shrink: 0;
+}
+.header-address {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start; /* Указываем, что address будет в третьей колонке */
+  align-items: center;
+  text-align: left;
+  margin-left: auto;
+  color: #000;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.cover {
+  width: 1440px;
+  height: 757px;
+  flex-shrink: 0;
+  border: 1px solid #131111;
+  margin-bottom: 180px;
+  position: relative;
+  z-index: -1;
+}
+.cover-img {
+  background-color: #000;
+  background-image: url("/images/cover.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.6;
+  background: #000;
+}
+
+.cover-txt {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115%; /* 115px */
+  letter-spacing: 30px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+.cover-txt-bottom {
+  color: #fff;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 127.273% */
+  text-transform: uppercase;
+}
+h2 {
+  margin-bottom: 25px;
+}
+.lots {
+  width: 1440px;
+}
+
+.lots ul {
+  margin: 74px 50px 50px 50px;
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+.lots li {
+  min-width: 430px;
+  height: 450px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+
+  
+}
+.lot-links {
+  width: 100%;
+  height: 100%;
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  position: relative;
+  padding: 50px 40px;
+
+  
+}
+
+.lot-first {
+  background-image: url("/images/card-lot-01.jpg");
+  background-size: contain;
+}
+
+.lot-second {
+  background-image: url("/images/card-lot-02.jpg");
+  background-size: contain;
+}
+
+.lot-third {
+  background-image: url("/images/card-lot-03.jpg");
+  background-size: contain;
+}
+
+.lot-titul {
+  flex: 0 0 auto;
+  color: #fff;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+.lot-content {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 24px */
+  position: relative;
+  z-index: 1;
+}
+
