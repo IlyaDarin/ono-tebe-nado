@@ -78,7 +78,6 @@ address {
   width: 100%;
   height: 100%;
   background-size: cover;
-
 }
 .overlay {
   width: 100%;
@@ -89,20 +88,29 @@ address {
   background: #000;
 }
 .cover-txt {
-padding: 165px 50px 237px 50px;
-display: block;
+  padding: 165px 50px 147px 50px;
+  display: block;
+  line-height: 1.5;
 }
 .cover-txt-word {
   display: block;
 }
-.word-first {
-  text-align: left;
+
+.letter-spacing {
+  letter-spacing: 0.6em;
 }
+.last-letter {
+  letter-spacing: 0;
+}
+
 .word-second {
   text-align: center;
+  padding-right: 0.6em;
+  line-height: 1.4;
 }
 .word-third {
   text-align: right;
+  line-height: 1;
 }
 .cover-txt {
   color: #fff;
@@ -110,7 +118,7 @@ display: block;
   font-size: 100px;
   font-style: normal;
   font-weight: 700;
-  line-height: 115%; /* 115px */
+  line-height: 115%;
   letter-spacing: 30px;
   text-transform: uppercase;
   position: relative;
@@ -119,12 +127,21 @@ display: block;
 .cover-txt-bottom {
   color: #fff;
   text-align: center;
-  font-family: Raleway;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: 28px; /* 127.273% */
   text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 62px;
+  word-spacing: 0.5em;
+}
+.auction-descriptio {
+  display: block;
+}
+button {
+  
 }
 h2 {
   margin-bottom: 25px;
@@ -146,8 +163,6 @@ h2 {
   position: relative;
   overflow: hidden;
   z-index: 1;
-
-  
 }
 .lot-links {
   width: 100%;
@@ -160,8 +175,6 @@ h2 {
   text-decoration: none;
   position: relative;
   padding: 50px 40px;
-
-  
 }
 
 .lot-first {
@@ -201,4 +214,3 @@ h2 {
   position: relative;
   z-index: 1;
 }
-
