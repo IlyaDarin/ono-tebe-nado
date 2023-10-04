@@ -1,10 +1,4 @@
-/*.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-*/
+
 body {
   display: flex;
   align-items: center;
@@ -83,7 +77,7 @@ address {
 }
 .cover-img {
   background-color: #000;
-  background-image: url("/images/cover.jpg");
+  background-image: url("../images/cover.jpg");
   background-size: cover;
 }
 .overlay {
@@ -215,17 +209,17 @@ padding-bottom: 27px;
 }
 
 .lot-first {
-  background-image: url("/images/card-lot-01.jpg");
+  background-image: url("../images/card-lot-01.jpg");
   background-size: contain;
 }
 
 .lot-second {
-  background-image: url("/images/card-lot-02.jpg");
+  background-image: url("../images/card-lot-02.jpg");
   background-size: contain;
 }
 
 .lot-third {
-  background-image: url("/images/card-lot-03.jpg");
+  background-image: url("../images/card-lot-03.jpg");
   background-size: contain;
 }
 
