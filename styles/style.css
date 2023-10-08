@@ -1,8 +1,6 @@
 main {
   max-width: 1440px;
   margin: 0 auto;
-  font-family: Raleway;
-  font-style: normal;
 }
 
 .header {
@@ -66,7 +64,6 @@ h1 {
   font-weight: 700;
   font-size: 40px;
   line-height: normal;
-  line-height: 115%;
   text-transform: uppercase;
 }
 
