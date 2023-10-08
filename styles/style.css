@@ -1,8 +1,8 @@
-
-body {
+main {
   max-width: 1440px;
   margin: 0 auto;
-  
+  font-family: Raleway;
+  font-style: normal;
 }
 
 .header {
@@ -12,13 +12,13 @@ body {
   align-items: center;
   padding: 92px 51px 92px 52px;
 }
+
 .menu {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 2.02em;
   list-style: circle;
-
 }
 
 .menu li {
@@ -33,16 +33,18 @@ body {
   width: 135px;
   height: 109px;
 }
+
 .menu li:first-child {
-  margin-left: 0; 
+  margin-left: 0;
   list-style: none;
 }
+
 address {
-  font-style: normal;
+  color: #000;
   font-weight: 400;
   font-size: 18px;
-  line-height: 24px;
-  color: #000;
+  font-style: normal;
+  line-height: 135%;
 }
 
 .address-container {
@@ -52,23 +54,22 @@ address {
   align-items: flex-start;
   text-underline-offset: 4px;
 }
+
 .header-address {
-  justify-self: end; 
+  justify-self: end;
 }
 
+/* заголовок и cover*/
 
-/* .header-address span::after {
-  content: "";
-  letter-spacing: 0;
-}заголовок и cover*/
 h1 {
   color: #000;
   font-weight: 700;
   font-size: 40px;
   line-height: normal;
-  line-height: 115%; /* 115px */
+  line-height: 115%;
   text-transform: uppercase;
 }
+
 .cover {
   position: relative;
   z-index: -1;
@@ -76,11 +77,15 @@ h1 {
   padding: 0;
   text-align: center;
 }
+
 .cover-img {
+  max-width: 1440px;
+  overflow: hidden;
   background-color: #000;
   background-image: url("../images/cover.jpg");
   background-size: cover;
 }
+
 .overlay {
   position: absolute;
   z-index: 0;
@@ -91,35 +96,10 @@ h1 {
 }
 
 .cover-txt {
-  display: block;
-  padding: 165px 49px 135px 51px;
-  line-height: 1.5;
-}
-.cover-txt-word {
-  display: block;
-}
-
-.letter-spacing {
-  letter-spacing: 0.6em;
-}
-.last-letter {
-  letter-spacing: 0;
-}
-.word-first {
-  text-align: left;
-}
-.word-second {
-  padding-right: 0.6em;
-  line-height: 1.4;
-  text-align: center;
-}
-.word-third {
-  line-height: 1;
-  text-align: right;
-}
-.cover-txt {
   position: relative;
   z-index: 1;
+  display: block;
+  padding: 165px 49px 135px 51px;
   color: #fff;
   font-weight: 700;
   font-size: 100px;
@@ -127,6 +107,37 @@ h1 {
   letter-spacing: 30px;
   text-transform: uppercase;
 }
+
+.cover-txt-word {
+  display: block;
+}
+
+.letter-spacing {
+  letter-spacing: 0.6em;
+}
+
+.last-letter {
+  letter-spacing: 0;
+}
+
+.word-first {
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+.word-second {
+  padding-right: 0.6em;
+  padding-bottom: 20px;
+  line-height: 100%;
+  text-align: center;
+}
+
+.word-third {
+  line-height: 1;
+  line-height: 100%;
+  text-align: right;
+}
+
 .cover-txt-bottom {
   position: relative;
   z-index: 1;
@@ -134,50 +145,46 @@ h1 {
   justify-content: flex-end;
   align-items: center;
   gap: 3.65em;
-  box-sizing: border-box;
   padding-right: 50px;
   padding-bottom: 49px;
-  
   color: #fff;
   font-weight: 400;
   font-size: 22px;
-  font-style: normal;
+  line-height: 127.273%;
   text-transform: uppercase;
 }
-.auction-description {
+
+.cover-txt-bottom-spacing {
   word-spacing: 0.8em;
 }
 
 .cover-button {
-  
-  display: inline-block;
   border: 1px solid #fff;
   padding: 12px 31px;
   color: #fff;
   font-weight: 400;
   font-size: 22px;
-  font-style: normal;
-  line-height: normal; 
+  line-height: normal;
   text-align: center;
   text-transform: uppercase;
   background-color: transparent;
 }
 
-h2 {
-font-weight: 700;
-font-size: 40px;
-text-transform: uppercase;
+/* секция Лоты*/
 
+h2 {
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
 }
 
 .lots h2 {
   padding-bottom: 27px;
   padding-left: 90px;
 }
-.lots {
-  padding-top: 182px;
-  
 
+.lots {
+  padding-top: 180px;
 }
 
 .lots ul {
@@ -188,6 +195,7 @@ text-transform: uppercase;
   padding-left: 50px;
   list-style: none;
 }
+
 .lots li {
   position: relative;
   z-index: 1;
@@ -196,8 +204,8 @@ text-transform: uppercase;
   min-width: 430px;
   min-height: 450px;
   overflow: hidden;
-  
 }
+
 .lot-links {
   position: relative;
   display: flex;
@@ -211,41 +219,39 @@ text-transform: uppercase;
 
 .lot-first {
   background-image: url("../images/card-lot-01.jpg");
-  background-size: contain;
-  
+  background-size: cover;
 }
 
 .lot-second {
   background-image: url("../images/card-lot-02.jpg");
-  background-size: contain;
+  background-size: cover;
 }
 
 .lot-third {
   background-image: url("../images/card-lot-03.jpg");
-  background-size: contain;
+  background-size: cover;
 }
 
 h3 {
   position: relative;
   z-index: 1;
-  flex: 0 0 auto;
   color: #fff;
   font-weight: 700;
   font-size: 22px;
-  font-style: normal;
   line-height: 120%;
   text-decoration-line: underline;
   text-transform: uppercase;
 }
-.lot-content { 
+
+.lot-content {
   position: relative;
   z-index: 1;
   color: #fff;
   font-weight: 400;
   font-size: 20px;
-  font-style: normal;
   line-height: 120%;
 }
+
 .lot-links-bottom {
   display: block;
   padding-top: 30px;
@@ -255,6 +261,8 @@ h3 {
   text-underline-offset: 4px;
 }
 
+/* секция about*/
+
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -262,9 +270,8 @@ h3 {
   justify-content: center;
   column-gap: 25px;
   align-self: center;
-  /*max-width: 1440px;*/
-  padding-right: 50px;
   padding-top: 182px;
+  padding-right: 50px;
   padding-left: 50px;
 }
 
@@ -273,16 +280,16 @@ h3 {
   flex-direction: column;
   grid-column: 2 / span 2;
   justify-self: center;
+  gap: 25px;
   color: #000;
   font-weight: 400;
   font-size: 20px;
   line-height: normal;
-  gap: 25px;
 }
 
 .about-txt h2 {
-padding-top: 100px;
-padding-bottom: 75px;
+  padding-top: 100px;
+  padding-bottom: 75px;
 }
 
 .logo-white {
@@ -290,14 +297,7 @@ padding-bottom: 75px;
   width: 148px;
   height: 114px;
 }
-/*
-.about-txt p:nth-child(2),
-.about-txt p:nth-child(3) {
-line-height: 1.15;
-}
-.about-txt p:nth-child(2) {
-  padding-bottom: 29px;
-}*/
+
 .logo-background {
   display: flex;
   justify-content: center;
@@ -306,8 +306,9 @@ line-height: 1.15;
   height: 240px;
   border-radius: 50%;
   background-color: #000;
-
 }
+
+/* Подвал */
 
 footer {
   display: grid;
@@ -316,26 +317,25 @@ footer {
   align-items: start;
   padding: 180px 50px 90px 50px;
 }
-.footer-address {
 
-}
 .footer-menu {
-  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
-  list-style: none;
+  width: 100%;
   font-weight: 400;
   font-size: 18px;
   line-height: normal;
   text-underline-offset: 4px;
-  
+  list-style: none;
 }
+
 .icon {
-  width: 50px; 
+  width: 50px;
   height: 50px;
 }
+
 .footer-img {
   display: flex;
   justify-content: flex-end;
