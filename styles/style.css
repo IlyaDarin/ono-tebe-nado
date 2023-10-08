@@ -276,11 +276,13 @@ h3 {
   color: #000;
   font-weight: 400;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: normal;
+  gap: 25px;
 }
 
 .about-txt h2 {
-padding: 100px 0;
+padding-top: 100px;
+padding-bottom: 75px;
 }
 
 .logo-white {
@@ -288,13 +290,14 @@ padding: 100px 0;
   width: 148px;
   height: 114px;
 }
+/*
 .about-txt p:nth-child(2),
 .about-txt p:nth-child(3) {
 line-height: 1.15;
 }
 .about-txt p:nth-child(2) {
   padding-bottom: 29px;
-}
+}*/
 .logo-background {
   display: flex;
   justify-content: center;
@@ -311,7 +314,7 @@ footer {
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: start;
   align-items: start;
-  padding: 183px 50px 90px 50px;
+  padding: 180px 50px 90px 50px;
 }
 .footer-address {
 
