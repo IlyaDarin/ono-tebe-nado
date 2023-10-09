@@ -1,7 +1,3 @@
-main {
-  max-width: 1440px;
-  margin: 0 auto;
-}
 
 .header {
   display: grid;
@@ -61,6 +57,11 @@ address {
   justify-self: end;
   justify-content: center;
   align-items: flex-start;
+}
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 /* заголовок и секция cover*/
